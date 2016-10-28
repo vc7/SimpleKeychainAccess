@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89E18AB1F27019579822B880 /* Pods_SimpleKeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1BD99E8EDA964B2E4FF79B /* Pods_SimpleKeychainAccess.framework */; };
+		BF2CBC001DC319BE0020A7A1 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */; };
+		BF2CBC011DC319BE0020A7A1 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */; };
 		BF3536D61DC3109100EAFD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3536D51DC3109100EAFD88 /* AppDelegate.swift */; };
 		BF3536D81DC3109100EAFD88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3536D71DC3109100EAFD88 /* ViewController.swift */; };
 		BF3536DB1DC3109200EAFD88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3536D91DC3109200EAFD88 /* Main.storyboard */; };
@@ -33,6 +35,7 @@
 		5C2103415CFD692B04497BAB /* Pods-SimpleKeychainAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleKeychainAccess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleKeychainAccess/Pods-SimpleKeychainAccess.debug.xcconfig"; sourceTree = "<group>"; };
 		6B1BD99E8EDA964B2E4FF79B /* Pods_SimpleKeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D397F128A9D72E2EB339D8 /* Pods-SimpleKeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleKeychainAccess.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleKeychainAccess/Pods-SimpleKeychainAccess.release.xcconfig"; sourceTree = "<group>"; };
+		BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManageable.swift; sourceTree = "<group>"; };
 		BF3536D21DC3109100EAFD88 /* SimpleKeychainAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleKeychainAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3536D51DC3109100EAFD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3536D71DC3109100EAFD88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +89,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF2CBBFE1DC3198A0020A7A1 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
 		BF3536C91DC3109100EAFD88 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +120,7 @@
 		BF3536D41DC3109100EAFD88 /* SimpleKeychainAccess */ = {
 			isa = PBXGroup;
 			children = (
+				BF2CBBFE1DC3198A0020A7A1 /* Token */,
 				BF3536D51DC3109100EAFD88 /* AppDelegate.swift */,
 				BF3536D71DC3109100EAFD88 /* ViewController.swift */,
 				BF3536D91DC3109200EAFD88 /* Main.storyboard */,
@@ -334,6 +346,7 @@
 			files = (
 				BF3536D81DC3109100EAFD88 /* ViewController.swift in Sources */,
 				BF3536D61DC3109100EAFD88 /* AppDelegate.swift in Sources */,
+				BF2CBC001DC319BE0020A7A1 /* TokenManageable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2CBC011DC319BE0020A7A1 /* TokenManageable.swift in Sources */,
 				BF3536EB1DC3109200EAFD88 /* SimpleKeychainAccessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
