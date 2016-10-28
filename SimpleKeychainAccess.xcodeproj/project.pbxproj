@@ -12,6 +12,7 @@
 		BF2CBC011DC319BE0020A7A1 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */; };
 		BF2CBC041DC31C240020A7A1 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBC031DC31C240020A7A1 /* AccessTokenManager.swift */; };
 		BF2CBC051DC31C240020A7A1 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBC031DC31C240020A7A1 /* AccessTokenManager.swift */; };
+		BF2CBC071DC31CB90020A7A1 /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CBC061DC31CB90020A7A1 /* AccessTokenManagerTests.swift */; };
 		BF3536D61DC3109100EAFD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3536D51DC3109100EAFD88 /* AppDelegate.swift */; };
 		BF3536D81DC3109100EAFD88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3536D71DC3109100EAFD88 /* ViewController.swift */; };
 		BF3536DB1DC3109200EAFD88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3536D91DC3109200EAFD88 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		70D397F128A9D72E2EB339D8 /* Pods-SimpleKeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleKeychainAccess.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleKeychainAccess/Pods-SimpleKeychainAccess.release.xcconfig"; sourceTree = "<group>"; };
 		BF2CBBFF1DC319BE0020A7A1 /* TokenManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManageable.swift; sourceTree = "<group>"; };
 		BF2CBC031DC31C240020A7A1 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
+		BF2CBC061DC31CB90020A7A1 /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
+		BF2CBC081DC31E360020A7A1 /* SimpleKeychainAccess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleKeychainAccess.entitlements; sourceTree = "<group>"; };
 		BF3536D21DC3109100EAFD88 /* SimpleKeychainAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleKeychainAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3536D51DC3109100EAFD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3536D71DC3109100EAFD88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			children = (
 				BF2CBBFE1DC3198A0020A7A1 /* Token */,
 				BF3536D51DC3109100EAFD88 /* AppDelegate.swift */,
+				BF2CBC081DC31E360020A7A1 /* SimpleKeychainAccess.entitlements */,
 				BF3536D71DC3109100EAFD88 /* ViewController.swift */,
 				BF3536D91DC3109200EAFD88 /* Main.storyboard */,
 				BF3536DC1DC3109200EAFD88 /* Assets.xcassets */,
@@ -140,6 +144,7 @@
 			children = (
 				BF3536EA1DC3109200EAFD88 /* SimpleKeychainAccessTests.swift */,
 				BF3536EC1DC3109200EAFD88 /* Info.plist */,
+				BF2CBC061DC31CB90020A7A1 /* AccessTokenManagerTests.swift */,
 			);
 			path = SimpleKeychainAccessTests;
 			sourceTree = "<group>";
@@ -204,7 +209,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2CBC051DC31C240020A7A1 /* AccessTokenManager.swift in Sources */,
+				BF2CBC071DC31CB90020A7A1 /* AccessTokenManagerTests.swift in Sources */,
 				BF2CBC011DC319BE0020A7A1 /* TokenManageable.swift in Sources */,
 				BF3536EB1DC3109200EAFD88 /* SimpleKeychainAccessTests.swift in Sources */,
 			);
@@ -496,6 +502,7 @@
 			baseConfigurationReference = 5C2103415CFD692B04497BAB /* Pods-SimpleKeychainAccess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleKeychainAccess/SimpleKeychainAccess.entitlements;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = SimpleKeychainAccess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +517,7 @@
 			baseConfigurationReference = 70D397F128A9D72E2EB339D8 /* Pods-SimpleKeychainAccess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleKeychainAccess/SimpleKeychainAccess.entitlements;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = SimpleKeychainAccess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
