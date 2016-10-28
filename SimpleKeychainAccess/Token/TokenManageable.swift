@@ -22,7 +22,7 @@ protocol TokenManageable {
 }
 
 extension TokenManageable {
-    var keychain: Keychain {
+    private var keychain: Keychain {
         get {
             return Keychain(service: key)
         }
